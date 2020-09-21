@@ -1,4 +1,4 @@
-# dotnetframework.aspnetcore.msfs-2020-api-host
+# MSFS 2020 API Host
 A REST API host for the Microsoft Flight Simulator 2020 SimConnect API - Including map overlay &amp; sync applet.
 
 ### State
