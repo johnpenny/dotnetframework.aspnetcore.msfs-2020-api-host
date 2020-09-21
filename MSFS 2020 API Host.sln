@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSFS 2020 API Host", "MSFS 2020 API Host\MSFS 2020 API Host.csproj", "{2DB9BB50-333F-4126-8283-2A64A61852FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DB9BB50-333F-4126-8283-2A64A61852FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB9BB50-333F-4126-8283-2A64A61852FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB9BB50-333F-4126-8283-2A64A61852FA}.Debug|x64.ActiveCfg = Debug|x64
+		{2DB9BB50-333F-4126-8283-2A64A61852FA}.Debug|x64.Build.0 = Debug|x64
+		{2DB9BB50-333F-4126-8283-2A64A61852FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB9BB50-333F-4126-8283-2A64A61852FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB9BB50-333F-4126-8283-2A64A61852FA}.Release|x64.ActiveCfg = Release|x64
+		{2DB9BB50-333F-4126-8283-2A64A61852FA}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {346590EC-AE7F-44BB-91F7-0F4A6EF02D5B}
+	EndGlobalSection
+EndGlobal
