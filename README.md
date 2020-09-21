@@ -39,7 +39,7 @@ It is important to note that when not running from localhost (or when the localh
 While this is a bit of a lie (your connection is secure unless you connected via http for some reason) the browser is treating the server as it would any public web server, so it is in paranoid mode.
 In Chrome you simply need to click 'Advanced' and view the page anyway.
 
-To get the query data you will need a free geonames account.
+To get the query data you will need a free https://geonames.org account.
 
 ### I like it, how can I help?
 Firstly let me know you like it by starring it on github. I will dedicate more time to it if people use it.
