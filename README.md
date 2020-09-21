@@ -26,6 +26,8 @@ It also allows other people with access to your networking to view your flight a
 
 ### How?
 
+Runs on a windows with .NET runtime. Only tested on up to date Windows 10 machines.
+
 The app requires trusting a localhost issued ssl certificate, and a firewall rule. If you don't want to - or can't - do either of those things then the app will not function.
 
 * Download the project as a zip (Hit the green button up at the top right or use https://github.com/johnpenny/dotnetframework.aspnetcore.msfs-2020-api-host/archive/master.zip).
