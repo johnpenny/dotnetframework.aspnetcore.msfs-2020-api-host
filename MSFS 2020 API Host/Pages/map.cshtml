@@ -188,11 +188,11 @@
 
         })(typeof exports === "undefined" ? this : exports);
     </script>
-    <script src="res/js/jpmo.js"></script>
+    <script src="res/js/jpmo.js?xc=@Model.guid"></script>
     <script type="text/javascript">
         var searchParams = new URLSearchParams(window.location.search);
         JPMO.host(window.location.hostname);
-        JPMO.demo(searchParams.get('demo'));
+        JPMO.demo((searchParams.get('demo') == 'true') ? true : false);
         JPMO.run();
     </script>
 </body>

@@ -5,6 +5,7 @@ namespace JohnPenny.MSFS.SimConnectManager.REST.Pages
     public class MapModel : PageModel
     {
         public string IPInfo { get; set; }
+        public System.Guid guid = System.Guid.NewGuid();
 
         public void OnGet()
         {
