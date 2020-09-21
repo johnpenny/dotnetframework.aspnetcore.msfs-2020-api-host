@@ -1496,7 +1496,7 @@ input:disabled + label
         localStorage.setItem('JPMO-options', JSON.stringify(options));
 
         // store this journey
-        if (!options.demoMode) {
+        if (!options.demoMode && thisJourneyData.pathVertsLatLon.length > 5) {
             var now = new Date();
             thisJourneyData.ended = `${now.toDateString()}-${now.toTimeString()}`;
             localStorage.setItem(`${thisJourneyData.started}-TO-${thisJourneyData.ended}`, JSON.stringify(thisJourneyData));
