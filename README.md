@@ -46,17 +46,14 @@ To get the query data you will need a free geonames account.
 ### I like it, how can I help?
 Firstly let me know you like it by starring it on github. I will dedicate more time to it if people use it.
 Then go and express your thanks to the following projects whose data powers the map:
-* //openstreetmap.org
-* //geonames.org
-* //maps.stamen.com
-Also
+* https://openstreetmap.org
+* https://geonames.org
+* https://maps.stamen.com
 
-
-### Uses
-
+### Packages Used
 * .NET Framework 4.8
 * ASP.NET Core 2.2.0
-* //leafletjs.com
+* https://leafletjs.com
 
 ### Roadmap
 This is a weekend project, I will not be able to dedicate significant time to adding or fixing features, so I strongly recommend you clone and modify it if needed.
