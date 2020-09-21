@@ -4,6 +4,8 @@ A REST API host for the Microsoft Flight Simulator 2020 SimConnect API - Includi
 ### State
 The API host is working as described and stable, but not optimised or fully tested.
 
+The code is a bit of a mess but relatively simple.
+
 The map overlay applet is working on Win10 desktop Chrome browser, and is untested on any other platform.
 
 There are many quirks and visual issues that should be simple to fix, but I don't have time right now; When I get spare time I will work through the following TODO lists.
