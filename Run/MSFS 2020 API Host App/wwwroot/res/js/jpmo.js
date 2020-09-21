@@ -152,6 +152,7 @@ var JPMO = (function () {
 
     function doGeonamesQueriesFetch(forceFetch) {
 
+        if (!options.geonamesOrgAccount) return;
         if (!forceFetch) forceFetch = 'all';
 
         console.log('Query fetch ' +forceFetch);
@@ -1495,7 +1496,7 @@ input:disabled + label
         localStorage.setItem('JPMO-options', JSON.stringify(options));
 
         // store this journey
-        if (!demoMode) {
+        if (!options.demoMode) {
             var now = new Date();
             thisJourneyData.ended = `${now.toDateString()}-${now.toTimeString()}`;
             localStorage.setItem(`${thisJourneyData.started}-TO-${thisJourneyData.ended}`, JSON.stringify(thisJourneyData));
