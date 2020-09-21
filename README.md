@@ -12,6 +12,7 @@ There are many quirks and visual issues that should be simple to fix, but I don'
 
 ##### TODO Map Overlay (I'm only working on the integrated map stuff, not the console applet)
 * Keep journey in view option to automatically keep the journey in the map bounds
+* Hide query UI completely
 * Resolving some js quirks I fell into
 * Journey saving and loading fixed
 * Rotational resets; make them unanimated
