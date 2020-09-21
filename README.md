@@ -48,7 +48,7 @@ Firstly let me know you like it by starring it on github. I will dedicate more t
 Then go and express your thanks to the following projects whose data powers the map:
 * https://openstreetmap.org
 * https://geonames.org
-* https://maps.stamen.com
+* http://maps.stamen.com
 
 ### Packages Used
 * .NET Framework 4.8
