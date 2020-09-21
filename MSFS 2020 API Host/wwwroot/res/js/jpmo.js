@@ -166,7 +166,7 @@ var JPMO = (function () {
                     }
                     response.json().then(function (data) {
                         //console.log(data);
-                        var info = `${(data.countryName) ? `<p>Country: ${data.countryName}<br />Sub State: ${data.adminName1}</p>` : 'Plane Is Over Water'}`;
+                        var info = `${(data.countryName) ? `<p>Country: ${data.countryName}<br />Sub State: ${data.adminName1}</p>` : 'Plane is over water'}`;
                         var html = `${info}`;//end html
                         document.querySelector(`#${managedDOMEls.queryUILocation.id} .JPMOQueryExpandoData`).innerHTML = html;
                     });
@@ -185,7 +185,7 @@ var JPMO = (function () {
                     }
                     response.json().then(function (data) {
                         //console.log(data);
-                        var info = `${(data.ocean) ? data.ocean.name : 'Plane Is Over Land'}`;
+                        var info = `${(data.ocean) ? data.ocean.name : 'Plane is over land'}`;
                         var html = `${info}`;//end html
                         document.querySelector(`#${managedDOMEls.queryUIOcean.id} .JPMOQueryExpandoData`).innerHTML = html;
                     });
@@ -203,10 +203,16 @@ var JPMO = (function () {
                         return;
                     }
                     response.json().then(function (data) {
-                        //console.log(data);
-                        var info = `Observation @: ${data.weatherObservation.datetime}<br/>Station name: ${data.weatherObservation.stationName}<br/>Station ICAO: ${data.weatherObservation.ICAO}<br/>Wind direction: ${data.weatherObservation.windDirection}<br/>Wind Speed: ${data.weatherObservation.windSpeed}<br/>hPa: ${data.weatherObservation.hectoPascAltimeter}<br/>Station Elevation: ${data.weatherObservation.elevation}<br/>Temperature: ${data.weatherObservation.temperature}<br/>Humidity: ${data.weatherObservation.humidity}<br/>Clouds: ${data.weatherObservation.clouds}<br/>Cloud code: ${data.weatherObservation.cloudsCode}<br/>Dew point: ${data.weatherObservation.dewPoint}<br/>Conditions: ${data.weatherObservation.weatherCondition}`;
-                        var svairportlink = `<hr/><a href="https:\//skyvector.com/airport/${data.weatherObservation.ICAO}" target="_blank">skyvector.com ${data.weatherObservation.ICAO}<a/>`
-                        var html = `${info}${svairportlink}`;//end html
+                        console.log(data);
+                        var html =''
+                        if (data.weatherObservation) {
+                            var info = `Observation @: ${data.weatherObservation.datetime}<br/>Station name: ${data.weatherObservation.stationName}<br/>Station ICAO: ${data.weatherObservation.ICAO}<br/>Wind direction: ${data.weatherObservation.windDirection}<br/>Wind Speed: ${data.weatherObservation.windSpeed}<br/>hPa: ${data.weatherObservation.hectoPascAltimeter}<br/>Station Elevation: ${data.weatherObservation.elevation}<br/>Temperature: ${data.weatherObservation.temperature}<br/>Humidity: ${data.weatherObservation.humidity}<br/>Clouds: ${data.weatherObservation.clouds}<br/>Cloud code: ${data.weatherObservation.cloudsCode}<br/>Dew point: ${data.weatherObservation.dewPoint}<br/>Conditions: ${data.weatherObservation.weatherCondition}`;
+                            var svairportlink = `<hr/><a href="https:\//skyvector.com/airport/${data.weatherObservation.ICAO}" target="_blank">skyvector.com ${data.weatherObservation.ICAO}<a/>`
+                            html = `${info}${svairportlink}`;//end html
+                        }
+                        else {
+                            html = `${data.status.message}`;//end html
+                        }
                         document.querySelector(`#${managedDOMEls.queryUIWeather.id} .JPMOQueryExpandoData`).innerHTML = html;
                     });
                 })
