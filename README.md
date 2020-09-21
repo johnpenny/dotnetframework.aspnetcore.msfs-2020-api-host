@@ -34,7 +34,7 @@ The app requires trusting a localhost issued ssl certificate, and a firewall rul
 * Unzip the downloaded file and go to the 'Run' directory.
 * Find the .exe and run it. (If it fails or crashes try running it again - there is a quirk I see on some machines where the first run fails to start the WPF window)
 * Accept the firewall and certificate trust requests.
-* Go to 'localhost' in a browser to check out the content. I recommend viewing the demo test page.
+* Go to https://localhost:4380 in a browser to check out the content. I recommend viewing the map demo page first https://localhost:4380/map?demo=true.
 * Now you can either run MSFS2020 and use it at localhost, or find your local network address and view the map from another computer.
 
 It is important to note that when not running from localhost (or when the localhost cert expires) you will get warnings from web browsers telling you the connection is not secure.
