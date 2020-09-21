@@ -11,7 +11,7 @@ The map overlay applet is working on Win10 desktop Chrome browser, and is untest
 There are many quirks and visual issues that should be simple to fix, but I don't have time right now; When I get spare time I will work through the following TODO lists.
 
 ##### TODO Map Overlay (I'm only working on the integrated map stuff, not the console applet)
-* Keep journey in view options to automatically keep the journey in the map bounds
+* Keep journey in view option to automatically keep the journey in the map bounds
 * Resolving some js quirks I fell into
 * Journey saving and loading fixed
 * Rotational resets; make them unanimated
