@@ -8,8 +8,7 @@ The map overlay applet is working on Win10 desktop Chrome browser, and is untest
 
 There are many quirks and visual issues that should be simple to fix, but I don't have time right now; When I get spare time I will work through the following TODO lists.
 
-##### TODO Map Overlay
-* Better sync for altitude visuals
+##### TODO Map Overlay (I'm only working on the integrated map stuff, not the console applet)
 * Rotational resets; make them unanimated
 * Saving and managing trips server side instead of localstorage
 * Bookmarking from the windows widget window
