@@ -62,3 +62,12 @@ This is a weekend project, I will not be able to dedicate significant time to ad
 
 ### Pull Requests
 Accepted in principle, but I don't have time to check and test, so large changes are unlikely to be pulled quickly.
+
+## Screenshots
+
+![Screenshot 1](/screenshots/1.png?raw=true "Screenshot 1")
+![Screenshot 2](/screenshots/2.png?raw=true "Screenshot 2")
+![Screenshot 3](/screenshots/3.png?raw=true "Screenshot 3")
+![Screenshot 4](/screenshots/4.png?raw=true "Screenshot 4")
+![Screenshot 5](/screenshots/5.png?raw=true "Screenshot 5")
+![Screenshot 6](/screenshots/6.png?raw=true "Screenshot 6")
