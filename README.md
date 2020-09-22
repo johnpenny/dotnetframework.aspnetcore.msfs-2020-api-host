@@ -11,6 +11,7 @@ The map overlay applet is working on Win10 desktop Chrome browser, and is untest
 There are many quirks and visual issues that should be simple to fix, but I don't have time right now; When I get spare time I will work through the following TODO lists.
 
 ##### TODO Map Overlay (I'm only working on the integrated map stuff, not the console applet)
+* Server side journey log and journey API endpoints (will be working on this asap so journey data is preserved)
 * Keep journey in view option to automatically keep the journey in the map bounds
 * Hide query UI completely
 * Resolving some js quirks I fell into
