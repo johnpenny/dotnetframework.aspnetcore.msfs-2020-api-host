@@ -26,11 +26,11 @@ There are many quirks and visual issues that should be simple to fix, but I don'
 * More data structs with interesting SimConnect data
 
 
-### Why?
+### Why Did You Make It?
 While playing MSFS2020 I found myself wanting to see more about the place I was flying over. This tool allows me to do that.
 It also allows other people with access to your networking to view your flight as it happens.
 
-### How?
+### How Do I Use It?
 
 Runs on a windows with .NET runtime. Only tested on up to date Windows 10 machines.
 
