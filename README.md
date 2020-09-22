@@ -53,13 +53,6 @@ Then go and express your thanks to the following projects whose data powers the 
 * https://geonames.org
 * http://maps.stamen.com
 
-### Framework
-* .NET Framework 4.8
-
-### Packages Used
-* ASP.NET Core 2.2.0
-* https://leafletjs.com
-
 ### Roadmap
 This is a weekend project, I will not be able to dedicate significant time to adding or fixing features, so I strongly recommend you clone and modify it if needed.
 
@@ -74,3 +67,25 @@ Accepted in principle, but I don't have time to check and test, so large changes
 ![Screenshot 4](/screenshots/4.png?raw=true "Screenshot 4")
 ![Screenshot 5](/screenshots/5.png?raw=true "Screenshot 5")
 ![Screenshot 6](/screenshots/6.png?raw=true "Screenshot 6")
+
+## INFO
+
+### Framework
+* .NET Framework 4.8
+
+### Packages Used
+* ASP.NET Core 2.2.0
+* https://leafletjs.com
+* https://prismjs.com
+
+### Other Libs
+* SimConnect.dll
+* Microsoft.FlightSimulator.SimConnect.dll (managed lib from MSFS2020 SDK)
+
+### Data Sources
+* https://openstreetmap.org
+* https://geonames.org
+* http://maps.stamen.com
+
+### Other Assets
+* https://material.io/resources/icons
