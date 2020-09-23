@@ -351,6 +351,9 @@ MigrationBackup/
 
 ###
 
+# allow localhost cert
+!MSFS2020APIHOST.pfx
+
 # add the Run dir content raw - no ignore rules apply
 !Run/*
 
