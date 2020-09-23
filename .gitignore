@@ -1,6 +1,5 @@
-# add the Run dir raw
+# add the Run dir content raw - no ignore rules apply
 !Run/*
-#[Rr]un/
 
 # exclude the promotional material from master branch
 [Pp]romo/
