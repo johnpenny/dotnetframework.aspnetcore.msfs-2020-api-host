@@ -152,10 +152,14 @@ var JPMO = (function () {
 
     function doGeonamesQueriesFetch(forceFetch) {
 
-        if (!options.geonamesOrgAccount) return;
+        if (!options.geonamesOrgAccount) {
+            console.log('To use the query feature please enter a geonames.org account name in the options menu.');
+            return;
+        }
+
         if (!forceFetch) forceFetch = 'all';
 
-        console.log('Query fetch ' +forceFetch);
+        console.log(`Geonames fetch query for : ${forceFetch} : With username : ${options.geonamesOrgAccount}`);
 
         if (forceFetch == 'all' && options.showQueryLocation == 'visible' || forceFetch == 'location') {
             fetch(`\//secure.geonames.org/countrySubdivisionJSON?lat=${simConnectData.latitude.toFixed(15)}&lng=${simConnectData.longitude.toFixed(15)}&username=${options.geonamesOrgAccount}`)
@@ -519,7 +523,10 @@ Mach: ${simConnectData.airspeedMach.toFixed(5)}
     }
 
     function onUpdateGeonamesAccount() {
-        options.geonamesOrgAccount = managedDOMEls.optionsGeonamesAccount.value;
+        // prevent spaces
+        var string = managedDOMEls.optionsGeonamesAccount.value.trim();
+        options.geonamesOrgAccount = string;
+        managedDOMEls.optionsGeonamesAccount.value = string;
     }
 
     function onUpdateGeonamesInterval() {
@@ -835,12 +842,16 @@ input:disabled + label
     margin: 0.8em 0;
 }
 
+#map-options small
+{
+    font-size: 0.8rem;
+}
+
 #map-options > span > *
 {
     display: inline-block;
     width: 100%;
     vertical-align: middle;
-    font-size: 1em;
     line-height: 1.5em;
 }
 
@@ -1166,10 +1177,12 @@ input:disabled + label
 
     <h1>Geonames Query Options</h1>
 
-    <small>
-        Sign up for a free account at <a href="https://www.geonames.org/login" target="_blank">geonames.org</a>. <br/>
-        On your <a href="https://www.geonames.org/manageaccount" target="_blank">account page</a> enable free web services.
-    </small>
+    <span>
+        <small>
+            Sign up for a free account at <a href="https://www.geonames.org/login" target="_blank">geonames.org</a>. <br/>
+            On your <a href="https://www.geonames.org/manageaccount" target="_blank">account page</a> enable free web services.
+        </small>
+    </span>
 
     <span>
         <label for="JPMO-opt-geonamesaccount">geonames.org Account Name: </label>
