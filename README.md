@@ -1,31 +1,8 @@
 # MSFS 2020 API Host
-A REST API host for the Microsoft Flight Simulator 2020 SimConnect API - Including map overlay &amp; sync applet.
+*Info for devs is below
 
-### State
-The API host is working as described and stable, but not optimised or fully tested.
-
-The code is a bit of a mess but relatively simple.
-
-The map overlay applet is working on Win10 desktop Chrome browser, and is untested on any other platform.
-
-There are many quirks and visual issues that should be simple to fix, but I don't have time right now; When I get spare time I will work through the following TODO lists.
-
-##### TODO BROWSER Map Overlay
-* Keep current journey in view option - to automatically keep the journey in the map bounds
-* Hide query UI completely option
-* Resolving some js quirks I fell into
-* Rotational resets; make them unanimated
-* Mobile viewport design / responsive / scale
-##### TODO SERVER
-* Server side journey log and journey API endpoints (will be working on this asap so journey data is preserved)
-* Bookmarking from the windows widget window
-* Stress testing
-* More data structs with interesting SimConnect data
-
-
-### Why Did You Make It?
-While playing MSFS2020 I found myself wanting to see more about the place I was flying over. This tool allows me to do that.
-It also allows other people with access to your networking to view your flight as it happens.
+## For Gamers
+This project includes a build (in the 'Run' directory) with a map overlay web app included. You can run the .exe and view a map with details of your in-game flight from any browser that can contact your PC.
 
 ### How Do I Use It?
 
@@ -44,20 +21,13 @@ It is important to note that when not running from localhost (or when the localh
 While this is a bit of a lie (your connection is secure unless you connected via http for some reason) the browser is treating the server as it would any public web server, so it is in paranoid mode.
 In Chrome you simply need to click 'Advanced' and view the page anyway.
 
-To get the query data you will need a free https://geonames.org account.
+To get the query data you will need a free https://geonames.org account. Once you verify your email address, go to your account page and enable free web services, then enter your username into the map options menu.
 
-### I like it, how can I help?
-Firstly let me know you like it by starring it on github. I will dedicate more time to it if people use it.
-Then go and express your thanks to the following projects whose data powers the map:
-* https://openstreetmap.org
-* https://geonames.org
-* http://maps.stamen.com
+### Why Did You Make It?
+While playing MSFS2020 I found myself wanting to see more about the place I was flying over. This tool allows me to do that.
+It also allows other people with access to your networking to view your flight as it happens.
 
-### Roadmap
-This is a weekend project, I will not be able to dedicate significant time to adding or fixing features, so I strongly recommend you clone and modify it if needed.
-
-### Pull Requests
-Accepted in principle, but I don't have time to check and test, so large changes are unlikely to be pulled quickly.
+---
 
 ## Screenshots
 
@@ -67,6 +37,42 @@ Accepted in principle, but I don't have time to check and test, so large changes
 ![Screenshot 4](../promo/Promo/Screenshots/4.png?raw=true)
 ![Screenshot 5](../promo/Promo/Screenshots/5.png?raw=true)
 ![Screenshot 6](../promo/Promo/Screenshots/6.png?raw=true)
+
+---
+
+## For Devs
+A REST API host for the Microsoft Flight Simulator 2020 SimConnect API.
+
+### State
+The API host is working as described and stable, but not optimised or fully stress tested.
+
+The map overlay applet is working on Win10 desktop Chrome browser, and is untested on any other platform.
+
+##### TODO Browser Map Overlay
+* Keep current journey in view option - to automatically keep the journey in the map bounds
+* Hide query UI completely option
+* Resolving some js quirks I fell into
+* Rotational resets; make them unanimated
+* Mobile viewport design / responsive / scale -- do some basic mitigation and scaling
+
+##### TODO Server Host
+* Server side journey log and journey API endpoints (will be working on this asap so journey data is preserved)
+* Bookmarking from the windows widget window
+* Stress testing multi client requests && multi SimConnect requests
+* More data structs with interesting SimConnect data
+
+### I like it, how can I help?
+Firstly let me know you like it by starring it on github. I will dedicate more time to it if people use it. 
+
+In terms of dev stuff, it is probably best to just fork or clone it and mess around. I would rather this served as a starting point for other devs than turn into some monolithic project.
+
+### Roadmap
+This is a weekend project, I will not be able to dedicate significant time to adding or fixing features, so I strongly recommend you clone and modify it if needed.
+
+### Pull Requests
+Accepted in principle, but I don't have much time to check and test, so large changes are unlikely to be pulled quickly.
+
+---
 
 ## INFO
 
