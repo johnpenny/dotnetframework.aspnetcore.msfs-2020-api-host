@@ -1,5 +1,5 @@
 # MSFS 2020 API Host
-*Info for devs is below
+*Info for devs is below*
 
 ## For Gamers
 This project includes a build (in the 'Run' directory) with a map overlay web app included. You can run the .exe and view a map with details of your in-game flight from any browser that can contact your PC.
