@@ -51,9 +51,9 @@ The map overlay applet is working on Win10 desktop Chrome browser, and is untest
 
 ### Goals
 
-* A working template for REST API - SimConnect
-* A working live map web app that shows your current flight on a nice map
-* A working journey map web app that shows your logged journeys on a nice map
+* A template for REST API - SimConnect
+* A live map web app that shows your current flight on a nice map
+* A journey map web app that shows your logged journeys on a nice map
 
 ##### TODO Browser Map Overlay
 * Keep current journey in view option - to automatically keep the journey in the map bounds
