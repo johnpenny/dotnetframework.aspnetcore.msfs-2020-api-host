@@ -25,7 +25,8 @@ To get the query data you will need a free https://geonames.org account. Once yo
 
 ### Why Did You Make It?
 While playing MSFS2020 I found myself wanting to see more about the place I was flying over. This tool allows me to do that.
-It also allows other people with access to your networking to view your flight as it happens.
+
+It also allows other people (with access to your network) to view an MSFS 2020 flight, which is just plain cool.
 
 ---
 
