@@ -78,9 +78,10 @@ namespace JohnPenny.MSFS.SimConnectManager.REST.Services
 
 			Items.AddRange(new Aircraft[] {
 				new Aircraft {
+					GUID = Guid.NewGuid(),
+
 					LocalItem = "User",
 					LocalDescription = "The aircraft the user is inside within MSFS 2020.",
-					LocalGUID = Guid.NewGuid(),
 					LocalSimRequestType = SimConnectManager.RequestName.User,
 
 					Title = "UNSET",
@@ -110,9 +111,10 @@ namespace JohnPenny.MSFS.SimConnectManager.REST.Services
 
 				new Aircraft
 				{
+					GUID = Guid.NewGuid(),
+
 					LocalItem = "Dummy",
 					LocalDescription = "Will fill with random data (not useful) even if the sim connection is not live. For testing.",
-					LocalGUID = Guid.NewGuid(),
 					LocalSimRequestType = SimConnectManager.RequestName.DummyUser,
 
 					Title = "UNSET",

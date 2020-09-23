@@ -1,6 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+  
+  <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <Platforms>AnyCPU;x64</Platforms>
     <RootNamespace>JohnPenny.MSFS.SimConnectManager.REST</RootNamespace>
@@ -25,11 +30,12 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutputPath></OutputPath>
+    <OutputPath>..\Run</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
     <Content Remove="wwwroot\Index.cshtml.cs" />
+    <Content Remove="wwwroot\res\js\jpmo-journeys.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +43,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\res\js\jpmo-journeys.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="wwwroot\res\js\jpmo.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -353,3 +353,6 @@ MigrationBackup/
 
 # allow localhost cert
 !MSFS2020APIHOST.pfx
+
+# exclude the promotional material from master
+[Pp]romo/

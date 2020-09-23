@@ -72,7 +72,7 @@ namespace JohnPenny.MSFS.SimConnectManager.REST.Controllers
 						{
 							LocalItem = existingItem.LocalItem,
 							LocalDescription = existingItem.LocalDescription,
-							LocalGUID = existingItem.LocalGUID,
+							GUID = existingItem.GUID,
 							LocalSimRequestType = existingItem.LocalSimRequestType,
 
 							Title = "A title! " + Guid.NewGuid().ToString("n").Substring(0, 8),
@@ -116,7 +116,7 @@ namespace JohnPenny.MSFS.SimConnectManager.REST.Controllers
 						{
 							LocalItem = existingItem.LocalItem,
 							LocalDescription = existingItem.LocalDescription,
-							LocalGUID = existingItem.LocalGUID,
+							GUID = existingItem.GUID,
 							LocalSimRequestType = existingItem.LocalSimRequestType,
 
 							Title = Program.simConnectManager.UserRequestReturnedData.title,
@@ -262,7 +262,7 @@ namespace JohnPenny.MSFS.SimConnectManager.REST.Controllers
 					return NotFound(ErrorCode.RecordNotFound.ToString());
 				}
 				if (item.LocalSimRequestType == SimConnectManager.RequestName.NONE) return BadRequest(ErrorCode.CouldNotDeleteItemIsASimObject.ToString());
-				if (item.LocalGUID.ToString() != guid) return BadRequest(ErrorCode.CouldNotDeleteItemInvalidGUID.ToString());
+				if (item.GUID.ToString() != guid) return BadRequest(ErrorCode.CouldNotDeleteItemInvalidGUID.ToString());
 				aircraftRepository.Delete(id);
 			}
 			catch (Exception)

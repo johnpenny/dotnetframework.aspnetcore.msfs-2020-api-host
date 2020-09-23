@@ -9,6 +9,6 @@ namespace JohnPenny.MSFS.SimConnectManager.REST.Interfaces
 {
 	public interface IDataRepositoryItem<T>
 	{
-		Guid LocalGUID { get; set; }
+		Guid GUID { get; set; }
 	}
 }

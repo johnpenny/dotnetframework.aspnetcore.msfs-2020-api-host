@@ -15,13 +15,13 @@ namespace JohnPenny.MSFS.SimConnectManager.REST.Models
 	public class Aircraft : IDataRepositoryItem<Aircraft>
 	{
 		[Required]
+		public Guid GUID { get; set; }
+
+		[Required]
 		public string LocalItem { get; set; }
 
 		[Required]
 		public string LocalDescription { get; set; }
-
-		[Required]
-		public Guid LocalGUID { get; set; }
 
 		[Required]
 		public SimConnectManager.RequestName LocalSimRequestType { get; set; } // sim object data bind && signifies readonly real data object if not set to NONE

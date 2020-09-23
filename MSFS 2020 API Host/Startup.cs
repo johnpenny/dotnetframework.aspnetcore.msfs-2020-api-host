@@ -44,6 +44,7 @@ namespace JohnPenny.MSFS.SimConnectManager.REST
 					options.Conventions.AddPageRoute("/bookmarklet", "b");
 					options.Conventions.AddPageRoute("/applet", "a");
 					options.Conventions.AddPageRoute("/map", "m");
+					options.Conventions.AddPageRoute("/journeys", "j");
 					options.Conventions.AddPageRoute("/docs", "d");
 				});
 

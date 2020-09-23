@@ -34,8 +34,8 @@ Runs on a windows with .NET runtime. Only tested on up to date Windows 10 machin
 The app requires trusting a localhost issued ssl certificate, and a firewall rule. If you don't want to - or can't - do either of those things then the app will not function.
 
 * Download the project as a zip (Hit the green button up at the top right or use https://github.com/johnpenny/dotnetframework.aspnetcore.msfs-2020-api-host/archive/master.zip).
-* Unzip the downloaded file and go into the 'Run' directory, then the application directory.
-* Find the .exe in the application directory and run it. (If it fails or crashes try running it again - there is a quirk I see on some machines where the first run fails to start the WPF window)
+* Unzip the downloaded file; find the 'Run' directory, which contains everything you need to run the app (You may move and rename this directory).
+* Find the application .exe and run it. (If it fails or crashes try running it again - there is a quirk I see on some machines where the first run fails to start the WPF window)
 * Accept the firewall and certificate trust requests.
 * Go to https://localhost:4380 in a browser to check out the content. I recommend viewing the map demo page first https://localhost:4380/map?demo=true.
 * Now you can either run MSFS2020 and use it at localhost, or find your local network address (shown at the top of the homepage) and view the map from another computer.
