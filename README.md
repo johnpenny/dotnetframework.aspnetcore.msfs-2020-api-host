@@ -62,11 +62,11 @@ Accepted in principle, but I don't have time to check and test, so large changes
 ## Screenshots
 
 ![Screenshot 1](../promo/Promo/Screenshots/1.png?raw=true)
-![Screenshot 2](/screenshots/2.png?raw=true)
-![Screenshot 3](/screenshots/3.png?raw=true)
-![Screenshot 4](/screenshots/4.png?raw=true)
-![Screenshot 5](/screenshots/5.png?raw=true)
-![Screenshot 6](/screenshots/6.png?raw=true)
+![Screenshot 2](../promo/Promo/Screenshots/2.png?raw=true)
+![Screenshot 3](../promo/Promo/Screenshots/3.png?raw=true)
+![Screenshot 4](../promo/Promo/Screenshots/4.png?raw=true)
+![Screenshot 5](../promo/Promo/Screenshots/5.png?raw=true)
+![Screenshot 6](../promo/Promo/Screenshots/6.png?raw=true)
 
 ## INFO
 
