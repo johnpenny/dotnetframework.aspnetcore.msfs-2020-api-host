@@ -351,8 +351,8 @@ MigrationBackup/
 
 ####
 
-# allow localhost cert
-!MSFS2020APIHOST.pfx
+# add the Run dir raw - including localhost cert
+!Run
 
 # exclude the promotional material from master
 [Pp]romo/
