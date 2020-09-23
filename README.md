@@ -49,6 +49,12 @@ The API host is working as described and stable, but not optimised or fully stre
 
 The map overlay applet is working on Win10 desktop Chrome browser, and is untested on any other platform.
 
+### Goals
+
+* A working template for REST API - SimConnect
+* A working live map web app that shows your current flight on a nice map
+* A working journey map web app that shows your logged journeys on a nice map
+
 ##### TODO Browser Map Overlay
 * Keep current journey in view option - to automatically keep the journey in the map bounds
 * Hide query UI completely option
@@ -63,9 +69,11 @@ The map overlay applet is working on Win10 desktop Chrome browser, and is untest
 * More data structs with interesting SimConnect data
 
 ### I like it, how can I help?
-Firstly let me know you like it by starring it on github. I will dedicate more time to it if people use it. 
+Let me know you like it by starring it on github. Also let me know if you make anything cool using this as a starting point.
 
-In terms of dev stuff, it is probably best to just fork or clone it and mess around. I would rather this served as a starting point for other devs than turn into some monolithic project.
+If you find a bug log an issue on Github.
+
+In terms of development of the map overlay app: I intend to create the live map and journey history map and then stop developing the project. There isn't a huge amount left to do, I just need to polish and optimise everything. I also need to refactor the JS.
 
 ### Roadmap
 This is a weekend project, I will not be able to dedicate significant time to adding or fixing features, so I strongly recommend you clone and modify it if needed.
