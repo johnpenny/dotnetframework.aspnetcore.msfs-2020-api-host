@@ -10,23 +10,24 @@ The map overlay applet is working on Win10 desktop Chrome browser, and is untest
 
 There are many quirks and visual issues that should be simple to fix, but I don't have time right now; When I get spare time I will work through the following TODO lists.
 
-##### TODO Map Overlay (I'm only working on the integrated map stuff, not the console applet)
+##### TODO BROWSER Map Overlay
+* Keep current journey in view option - to automatically keep the journey in the map bounds
+* Hide query UI completely option
+* Resolving some js quirks I fell into
 * Rotational resets; make them unanimated
-* Saving and managing trips server side instead of localstorage
-* Bookmarking from the windows widget window
-* iOS SVG fixes
 * Mobile viewport design / responsive / scale
-* Disconnect 'camera' from plane
-##### TODO API
+##### TODO SERVER
+* Server side journey log and journey API endpoints (will be working on this asap so journey data is preserved)
+* Bookmarking from the windows widget window
 * Stress testing
 * More data structs with interesting SimConnect data
 
 
-### Why?
+### Why Did You Make It?
 While playing MSFS2020 I found myself wanting to see more about the place I was flying over. This tool allows me to do that.
 It also allows other people with access to your networking to view your flight as it happens.
 
-### How?
+### How Do I Use It?
 
 Runs on a windows with .NET runtime. Only tested on up to date Windows 10 machines.
 
@@ -52,11 +53,6 @@ Then go and express your thanks to the following projects whose data powers the 
 * https://geonames.org
 * http://maps.stamen.com
 
-### Packages Used
-* .NET Framework 4.8
-* ASP.NET Core 2.2.0
-* https://leafletjs.com
-
 ### Roadmap
 This is a weekend project, I will not be able to dedicate significant time to adding or fixing features, so I strongly recommend you clone and modify it if needed.
 
@@ -71,3 +67,25 @@ Accepted in principle, but I don't have time to check and test, so large changes
 ![Screenshot 4](/screenshots/4.png?raw=true "Screenshot 4")
 ![Screenshot 5](/screenshots/5.png?raw=true "Screenshot 5")
 ![Screenshot 6](/screenshots/6.png?raw=true "Screenshot 6")
+
+## INFO
+
+### Framework
+* .NET Framework 4.8
+
+### Packages Used
+* ASP.NET Core 2.2.0
+* https://leafletjs.com
+* https://prismjs.com
+
+### Other Libs
+* SimConnect.dll
+* Microsoft.FlightSimulator.SimConnect.dll (managed lib from MSFS2020 SDK)
+
+### Data Sources
+* https://openstreetmap.org
+* https://geonames.org
+* http://maps.stamen.com
+
+### Other Assets
+* https://material.io/resources/icons
